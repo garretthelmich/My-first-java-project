@@ -74,7 +74,7 @@
     
     public static void calcs() {
     	cSubtotal = iPrice1 + iPrice2;
-    	cSalesTax = cSubtotal * .07;
+    	cSalesTax = cSubtotal * .07 + 0.2;
     	cTotal = cSubtotal + cSalesTax;
     }
     
