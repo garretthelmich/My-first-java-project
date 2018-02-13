@@ -18,7 +18,7 @@
  	//Global Definitions
  	
  	static String iData, iFirstName, iLastName, iToyName1, iToyName2, iAge; 
- 	static double iPrice1, cTotal, cSubtotal, cSalesTax, iPrice2;
+ 	static double iPrice1, cTotal, cSubtotal, cSalesTax, iPrice2, cDiscont;
  	
  	static Scanner scanner;
  	
@@ -74,8 +74,9 @@
     
     public static void calcs() {
     	cSubtotal = iPrice1 + iPrice2;
-    	cSalesTax = cSubtotal * .07 + 0.2;
-    	cTotal = cSubtotal + cSalesTax;
+	cDiscont = cSubtotal * .2;
+    	cSalesTax = cSubtotal * .07;
+    	cTotal = cSubtotal + cSalesTax - cDiscont;
     }
     
     public static void output() {
