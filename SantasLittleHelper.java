@@ -48,7 +48,8 @@
     	iLastName = scanner.next();
     	System.out.println(iLastName);
  	
- 		System.out.println("Please enter the toy name.");
+
+	    System.out.println("Please enter the toy name.");
  		iToyName1 = scanner.next();	
  		System.out.println(iToyName1);
  		
@@ -93,6 +94,7 @@
     	System.out.println(iFirstName + (" ") +  iLastName);
     	
    		System.out.println("Your Subtotal is: $" + cSubtotal);
+	System.out.println("Your 20% Discount is: $" + cDiscount);
      
      	System.out.println("Your sales tax is: $" + cSalesTax);
     
